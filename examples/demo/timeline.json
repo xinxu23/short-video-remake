@@ -1,0 +1,38 @@
+{
+  "video": "assets/talk_placeholder.mp4",
+  "srt": "script.srt",
+  "output": "demo_output.mp4",
+  "highlight": ["AI工作流", "十个", "三分钟", "十倍", "第二大脑", "扣一", "DeepSeek", "通义听悟", "即梦", "剪映", "飞书多维表格"],
+  "style": {
+    "auto_punch": {"every_cues": 2, "scale": 1.12}
+  },
+  "events": [
+    {"type": "title", "start": 0, "lines": ["10/10", "我每天在用的AI工具"], "sizes": [104, 84], "sub": "（上班族 · 下班日更三平台）", "until": "全网攒下"},
+
+    {"type": "badges", "cue": "全网攒下", "until": "全靠这套", "items": [
+      {"name": "抖音 @你的账号", "value": "8.5万 粉丝", "avatar": "assets/av_douyin.png"},
+      {"name": "小红书 @你的账号", "value": "3.2万 粉丝", "avatar": "assets/av_xhs.png"},
+      {"name": "视频号 @你的账号", "value": "1.1万 粉丝", "avatar": "assets/av_wechat.png"}
+    ]},
+    {"type": "zoom", "cue": "全靠这套", "dur": 2.2, "scale": 1.18, "mode": "push"},
+
+    {"type": "tool", "cue": "DeepSeek", "name": "DeepSeek", "color": "#4D6BFE", "initial": "D", "until": "我不让它"},
+    {"type": "pip", "cue": "我不让它", "image": "assets/shot_deepseek.png", "aspect": 0.75, "width": 0.66, "until": "第二个"},
+
+    {"type": "tool", "cue": "通义听悟", "name": "通义听悟", "color": "#FF6A00", "initial": "听", "until": "一小时"},
+    {"type": "pip", "cue": "一小时", "image": "assets/shot_tingwu.png", "label": "1小时素材 → 3分钟", "until": "第三个"},
+
+    {"type": "tool", "cue": "即梦", "name": "即梦", "color": "#7B5CFF", "initial": "梦", "until": "封面、分镜"},
+    {"type": "pip", "cue": "封面、分镜", "image": "assets/shot_jimeng.png", "until": "以前做"},
+    {"type": "bigtext", "cue": "现在快了", "text": "10×", "size": 200, "color": "#FFD54A", "until": "第四个"},
+    {"type": "flash", "cue": "现在快了", "dur": 0.2},
+
+    {"type": "tool", "cue": "剪映", "name": "剪映", "color": "#111111", "initial": "剪", "until": "不会剪辑"},
+    {"type": "zoom", "cue": "不会剪辑", "dur": 2.8, "scale": 1.2, "mode": "push"},
+
+    {"type": "tool", "cue": "飞书多维表格", "name": "飞书多维表格", "color": "#3370FF", "initial": "飞", "until": "所有选题"},
+    {"type": "pip", "cue": "所有选题", "image": "assets/shot_feishu.png", "label": "我的第二大脑", "until": "想要我"},
+
+    {"type": "title", "cue": "想要我", "lines": ["评论区扣「1」"], "sizes": [110], "sub": "领取完整提示词", "sfx": "ding"}
+  ]
+}
